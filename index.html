@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+
+    <!-- javascript -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <!-- Roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <button id="bouton-magique">Clique moi dessus</button>
+      <p class="hidden" id="boom">BANG !</p>
+    </header>
+    <main class="container">
+      <form id="form">
+        <h1>Formulaire de contact</h1>
+        <input type="text" placeholder="Prénom" id="firstname" />
+        <input type="text" placeholder="Nom" id="lastname" />
+        <input type="email" placeholder="Email" id="email" />
+        <input type="text" placeholder="Sujet" id="subject" />
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Tapez votre message ici"></textarea>
+        <button type="submit">Envoyer le message</button>
+      </form>
+    </main>
+  </body>
+</html>
